@@ -42,7 +42,6 @@ for(i in 1:100)
   a<-table(testing$Marital_Status,pred)
   
   acc<-c(acc,sum(diag(a))/sum(a))
-  
 }
 
 acc

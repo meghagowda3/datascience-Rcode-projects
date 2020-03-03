@@ -13,7 +13,7 @@ iris_test <- rbind(iris_setosa[26:50,],iris_versicolor[26:50,],iris_virginica[26
 
 # Building model on training data 
 irisc5.0_train <- C5.0(iris_train[,-5],iris_train$Species)
-plot(irisc5.0_train) # Tree graph
+plot(irisc5.0_train) # Tree graph 
 # Training accuracy
 mean(iris_train$Species==predict(irisc5.0_train,iris_train)) # 97.33% Accuracy
 predc5.0_test <- predict(irisc5.0_train,newdata=iris_test) # predicting on test data
